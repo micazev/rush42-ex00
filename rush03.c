@@ -31,13 +31,15 @@ void	rush(int x, int y)
 			if ((p == 1 && r == 1) || (p == 1 && r == y))
 				ft_putchar('A');
 
-            // definir os caracteres da linha
+            // definir se é o vértice da coluna da direita
+           // condição: ser o último da primeira linha ou último número da segunda coluna 
+           // ou seja, x = 1 pra primeira linha e o último número de y 
+	   // os dois contadores chegam no valor que o usuário colocou
 			else if ((p == x && r == 1) || (p == 1 && r == y))
 				ft_putchar('C');
 
-            // definir se é o vértice da coluna da direita
-            // condição: ser o último da linha ou último número da segunda coluna 
-            // ou seja, os dois contadores chegam no valor que o usuário colocou
+            // definir os caracteres da linha
+			
 			else if ((p == 1) || (p == x) || (r == 1) || (r == y))
 				ft_putchar('B');
 
